@@ -1,0 +1,54 @@
+  h3
+  {
+    font-size: 25px !important;
+  }
+  canvas {
+    border:5px dashed rgb(96, 9, 235);
+  }
+
+  /* agregar estilo al botón Tomar instantanea */
+.btn-success:hover{
+  background-color: red;
+}
+
+/* código para darle algo de animación a este lienzo.:
+● animation-name:example: Aquí estamos definiendo a animation-name
+como un example - ejemplo, en el siguiente punto definiremos este
+example en el que agregaremos código de lo que debería ser la
+animación.
+● animation-duration: 4s: Definiremos el tiempo de la animación que es
+cuánto tiempo debe ejecutarse una animación.
+● animation-iteration-count:infinite: Queremos que la animación funcione
+continuamente, por lo que especificamos que el recuento de repeticiones
+sea infinite -infinita. */
+ canvas{
+animation-name: example;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+
+ }
+
+ /* @keyframes example:
+- @keyframes: es la palabra clave que se utiliza cuando queremos definir una animación.
+- example: Es el nombre de la animación que hemos llamado en el punto anterior.
+● from {box-shadow : 1px 1px 38px red;}: Aquí le damos la sombra del
+cuadro en rojo cuando comienza la animación.
+● to {box-shadow: 1px 1px 38px yellow;}: Entonces la propiedad de la
+sombra del cuadro debería cambiar de rojo a amarillo, por lo que
+especificamos amarillo aquí.
+
+Primero 1px significa: Que tan hacia el lado derecho del lienzo deseas el
+color.
+Segundo 1px significa: Que tan hacia el fondo quieres el color.
+
+38px significa: Qué tan extenso deseas que se extienda el color.
+
+Básicamente, esta animación funcionará continuamente cambiando la
+sombra del cuadro de rojo a amarillo.
+© 2022 - BYJU'S Future School.
+Nota: Este documento tiene derecho de autor original de BYJU'S Future Schoo */
+  @keyframes example{
+from {box-shadow:1px 1 px 38px red;}
+to{box-shadow: 1px 1px 38px yellow ;} 
+
+ }
